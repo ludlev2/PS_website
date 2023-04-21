@@ -232,8 +232,14 @@ body {
 
     //logo
     .hero-logo {
-        height: 80px;
+        height: 30px;
+        opacity: 0.75;
     }
+    .hero-logo {
+        height: 40px;
+        opacity: 0.75;
+    }
+
 }
 
 //Telegram icon tweaking to insert into navbar
@@ -244,6 +250,9 @@ body {
     top: 2px;
 }
 
+.pad {
+    padding-top: 100px;
+}
 /* ==========================================================================
 2. Main content wrapper
 ========================================================================== */
