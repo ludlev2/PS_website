@@ -27,14 +27,14 @@
       <!-- Newsletter -->
       <div class="column is-4">
         <div class="subscribe-block" id="subscribe">
-          <form>
+          <form action="https://sheetdb.io/api/v1/awv2ywbvcgv8z" method="POST" id="sheetdb-form">
             <!-- Field -->
             <div class="control">
               <!-- Special input -->
               <input
                 class="krypton-subscribe-input"
                 type="email"
-                name="email"
+                name="data[email]"
                 placeholder="Email"
               />
               <button class="subscribe-button">
@@ -42,6 +42,27 @@
               </button>
             </div>
           </form>
+
+          <script>
+            var form = document.getElementById('sheetdb-form');
+            form.addEventListener('submit', e => {
+              e.preventDefault();
+              fetch(form.action, {
+                method: 'POST',
+                body: new FormData(document.getElementById('sheetdb-form')),
+              })
+                .then(response => response.json())
+                .then(data => {
+                  alert('Thank you for subscribing!');
+                })
+                .catch(error => {
+                  alert('Error');
+                });
+            })
+        
+            ;
+
+          </script>
         </div>
       </div>
       <!-- Links group -->
