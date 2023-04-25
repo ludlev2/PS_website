@@ -1,72 +1,104 @@
-lockfileVersion: 5.4
-
-specifiers:
-  '@alpinejs/collapse': 3.12.0
-  '@alpinejs/intersect': 3.12.0
-  '@alpinejs/persist': 3.12.0
-  '@astrojs/image': ^0.16.6
-  '@astrojs/node': ^5.1.1
-  '@astrojs/svelte': ^2.1.0
-  '@iconify/iconify': 3.1.0
-  alpinejs: 3.12.0
-  astro: ^2.3.1
-  astro-integration-lottie: ^0.2.3
-  autoprefixer: 10.4.14
-  bulma: 0.9.4
-  bulma-css-vars: 0.8.0
-  fuse.js: 6.6.2
-  js-datepicker: 5.18.2
-  lottie-web: ^5.11.0
-  lozad: 1.16.0
-  moment: 2.29.4
-  mongodb: ^5.3.0
-  notyf: 3.10.0
-  npm-run-all: 4.1.5
-  particles.js: 2.0.0
-  plyr: 3.7.7
-  postcss: ^8.4.23
-  sass: 1.59.3
-  simplebar: 6.2.2
-  svelte: ^3.58.0
-  typescript: ^4.9.5
-  unplugin-fonts: ^1.0.3
-  vercel: ^28.20.0
-  vite: ^4.3.2
+lockfileVersion: 5.4-inlineSpecifiers
 
 dependencies:
-  '@alpinejs/collapse': 3.12.0
-  '@alpinejs/intersect': 3.12.0
-  '@alpinejs/persist': 3.12.0
-  '@astrojs/image': 0.16.6_astro@2.3.1
-  '@astrojs/svelte': 2.1.0_nhcdvwivh32b3qmlowc6xjc4tq
-  '@iconify/iconify': 3.1.0
-  alpinejs: 3.12.0
-  astro: 2.3.1_sass@1.59.3
-  astro-integration-lottie: 0.2.3_lottie-web@5.11.0
-  bulma: 0.9.4
-  bulma-css-vars: 0.8.0_bulma@0.9.4
-  fuse.js: 6.6.2
-  js-datepicker: 5.18.2
-  lottie-web: 5.11.0
-  lozad: 1.16.0
-  moment: 2.29.4
-  mongodb: 5.3.0
-  notyf: 3.10.0
-  particles.js: 2.0.0
-  plyr: 3.7.7
-  postcss: 8.4.23
-  sass: 1.59.3
-  simplebar: 6.2.2
-  svelte: 3.58.0
-  typescript: 4.9.5
-  vercel: 28.20.0_sass@1.59.3
-  vite: 4.3.2_sass@1.59.3
+  '@alpinejs/collapse':
+    specifier: 3.12.0
+    version: 3.12.0
+  '@alpinejs/intersect':
+    specifier: 3.12.0
+    version: 3.12.0
+  '@alpinejs/persist':
+    specifier: 3.12.0
+    version: 3.12.0
+  '@astrojs/image':
+    specifier: ^0.16.6
+    version: 0.16.6_astro@2.3.1
+  '@astrojs/svelte':
+    specifier: ^2.1.0
+    version: 2.1.0_nhcdvwivh32b3qmlowc6xjc4tq
+  '@astrojs/vercel':
+    specifier: ^3.2.5
+    version: 3.2.5_astro@2.3.1
+  '@iconify/iconify':
+    specifier: 3.1.0
+    version: 3.1.0
+  alpinejs:
+    specifier: 3.12.0
+    version: 3.12.0
+  astro:
+    specifier: ^2.3.1
+    version: 2.3.1_sass@1.59.3
+  astro-integration-lottie:
+    specifier: ^0.2.3
+    version: 0.2.3_lottie-web@5.11.0
+  bulma:
+    specifier: 0.9.4
+    version: 0.9.4
+  bulma-css-vars:
+    specifier: 0.8.0
+    version: 0.8.0_bulma@0.9.4
+  fuse.js:
+    specifier: 6.6.2
+    version: 6.6.2
+  js-datepicker:
+    specifier: 5.18.2
+    version: 5.18.2
+  lottie-web:
+    specifier: ^5.11.0
+    version: 5.11.0
+  lozad:
+    specifier: 1.16.0
+    version: 1.16.0
+  moment:
+    specifier: 2.29.4
+    version: 2.29.4
+  mongodb:
+    specifier: ^5.3.0
+    version: 5.3.0
+  notyf:
+    specifier: 3.10.0
+    version: 3.10.0
+  particles.js:
+    specifier: 2.0.0
+    version: 2.0.0
+  plyr:
+    specifier: 3.7.7
+    version: 3.7.7
+  postcss:
+    specifier: ^8.4.23
+    version: 8.4.23
+  sass:
+    specifier: 1.59.3
+    version: 1.59.3
+  simplebar:
+    specifier: 6.2.2
+    version: 6.2.2
+  svelte:
+    specifier: ^3.58.0
+    version: 3.58.0
+  typescript:
+    specifier: ^4.9.5
+    version: 4.9.5
+  vercel:
+    specifier: ^28.20.0
+    version: 28.20.0_sass@1.59.3
+  vite:
+    specifier: ^4.3.2
+    version: 4.3.2_sass@1.59.3
 
 devDependencies:
-  '@astrojs/node': 5.1.1_astro@2.3.1
-  autoprefixer: 10.4.14_postcss@8.4.23
-  npm-run-all: 4.1.5
-  unplugin-fonts: 1.0.3_vite@4.3.2
+  '@astrojs/node':
+    specifier: ^5.1.1
+    version: 5.1.1_astro@2.3.1
+  autoprefixer:
+    specifier: 10.4.14
+    version: 10.4.14_postcss@8.4.23
+  npm-run-all:
+    specifier: 4.1.5
+    version: 4.1.5
+  unplugin-fonts:
+    specifier: ^1.0.3
+    version: 1.0.3_vite@4.3.2
 
 packages:
 
@@ -206,6 +238,24 @@ packages:
       which-pm-runs: 1.1.0
     transitivePeerDependencies:
       - supports-color
+
+  /@astrojs/vercel/3.2.5_astro@2.3.1:
+    resolution: {integrity: sha512-Az2Qcd0GSJHqZV7eWLe8q3h3tzbMApvSQbO6kCoJ9G4cUlQN1UeMZYQcJEG0WBB9YmHQNvttt8qyowVPACnwuQ==}
+    peerDependencies:
+      astro: ^2.3.1
+    dependencies:
+      '@astrojs/webapi': 2.1.0
+      '@vercel/analytics': 0.1.11
+      '@vercel/nft': 0.22.5
+      astro: 2.3.1_sass@1.59.3
+      fast-glob: 3.2.12
+      set-cookie-parser: 2.6.0
+      web-vitals: 3.3.1
+    transitivePeerDependencies:
+      - encoding
+      - react
+      - supports-color
+    dev: false
 
   /@astrojs/webapi/2.1.0:
     resolution: {integrity: sha512-sbF44s/uU33jAdefzKzXZaENPeXR0sR3ptLs+1xp9xf5zIBhedH2AfaFB5qTEv9q5udUVoKxubZGT3G1nWs6rA==}
@@ -2134,7 +2184,7 @@ packages:
     resolution: {integrity: sha512-8KG5RD0GVP4ydEzRn/I4BNDuxDtqVbOdm8675T49OIG/NGhaK0pjPX7ZcDlvKYbA+ulvVK3ztfcF4uBdOxuJbQ==}
     dependencies:
       '@gar/promisify': 1.1.3
-      semver: 7.3.8
+      semver: 7.5.0
     dev: false
 
   /@npmcli/move-file/1.1.2:
@@ -2486,6 +2536,12 @@ packages:
     resolution: {integrity: sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==}
     dev: false
 
+  /@vercel/analytics/0.1.11:
+    resolution: {integrity: sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw==}
+    peerDependencies:
+      react: ^16.8||^17||^18
+    dev: false
+
   /@vercel/build-utils/6.7.1:
     resolution: {integrity: sha512-Ecc9oQBSVwk1suENcRcj1L6gQrUt4+0XA9oPFxrUpoFEk04lP/ZV3qAQPk+ex08N+vfUulYdqb+cmVTnwqsmqw==}
     dev: false
@@ -2676,7 +2732,7 @@ packages:
       recast: 0.21.5
       remark-frontmatter: 4.0.1
       remark-mdx-frontmatter: 1.1.1
-      semver: 7.3.8
+      semver: 7.5.0
       sort-package-json: 1.57.0
       tar-fs: 2.1.1
       tsconfig-paths: 4.2.0
@@ -4694,7 +4750,7 @@ packages:
       '@types/glob': 7.2.0
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       glob: 7.2.3
       ignore: 5.2.4
       merge2: 1.4.1
@@ -5565,7 +5621,7 @@ packages:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
     engines: {node: '>=8'}
     dependencies:
-      semver: 6.1.1
+      semver: 6.3.0
     dev: false
 
   /make-error/1.3.6:
@@ -8526,6 +8582,10 @@ packages:
 
   /web-vitals/0.2.4:
     resolution: {integrity: sha512-6BjspCO9VriYy12z356nL6JBS0GYeEcA457YyRzD+dD6XYCQ75NKhcOHUMHentOE7OcVCIXXDvOm0jKFfQG2Gg==}
+    dev: false
+
+  /web-vitals/3.3.1:
+    resolution: {integrity: sha512-LTfY5GjcY3ngFzNsYFSYL+AmVmlWrzPTUxSMDis2rZbf+SzT7HH3NH4Y/l45XOlrAIunOBeURN9qtBHkRskAiA==}
     dev: false
 
   /webidl-conversions/3.0.1:
