@@ -1,0 +1,77 @@
+<!-- Cloned navbar that comes in on scroll -->
+<nav
+  x-data="initNavbar()"
+  x-on:scroll.window="scroll()"
+  id="navbar-clone"
+  class="navbar is-fixed is-dark"
+  :class="{
+  'is-active': scrolled,
+  '': !scrolled
+}"
+>
+ <div class="container">
+    <!-- Brand -->
+    <div class="navbar-brand">
+      <a href="/" class="navbar-item">
+        <img src="/img/logo/PointSwitch_logo.svg" alt="" />
+      </a>
+      <!-- Responsive toggle -->
+      <div class="navbar-burger" @click="openMobileMenu()">
+        <div class="menu-toggle">
+          <span
+            class="icon-box-toggle"
+            :class="{
+                      'active': mobileOpen,
+                      '': !mobileOpen
+                  }"
+          >
+            <span class="rotate">
+              <i class="icon-line-top"></i>
+              <i class="icon-line-center"></i>
+              <i class="icon-line-bottom"></i>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- Menu -->
+    <div
+      id="navbarMenu"
+      class="navbar-menu"
+      :class="{
+          'is-active': mobileOpen,
+          '': !mobileOpen
+      }"
+    >
+      <div class="navbar-end">
+        <!-- Menu item -->
+        <div class="navbar-item is-nav-link">
+          <a class="is-centered-responsive" href="personal">Personal</a>
+        </div>
+        <!-- Menu item -->
+        <div class="navbar-item is-nav-link">
+          <a class="is-centered-responsive" href="business">Business</a>
+        </div>
+        <!-- Menu item -->
+        <div class="navbar-item is-nav-link">
+          <a class="is-centered-responsive" href="partner">Partner</a>
+        </div>
+        <!-- Menu item -->
+        <div class="navbar-item is-nav-link">
+          <a class="is-centered-responsive" href="about-us">About us</a>
+        </div>
+        <!-- Sign up -->
+        <div class="navbar-item">
+          <a
+            href="#"
+            class="button k-button k-primary raised has-gradient slanted"
+          >
+            <span class="text">Sign up</span>
+            <span class="front-gradient"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- /Cloned navbar -->

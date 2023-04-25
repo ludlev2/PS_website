@@ -1,0 +1,127 @@
+---
+import Layout from "../layouts/Default.astro";
+import Navbar from "../components/Navbar.astro";
+import NavbarClone from "../components/NavbarClone.astro";
+const title = "Personal";
+---
+
+<Layout title={title}>
+  <div class="token-wrapper">
+    <!-- Landing page Hero -->
+    <section class="hero is-medium">
+      <div class="hero-head">
+        <!-- Cloned navbar -->
+        <NavbarClone />
+
+        <!-- Static navbar -->
+        <Navbar />
+      </div>
+
+      <div class="hero-body has-text-centered">
+        <div class="columns">
+          <div class="column is-6 is-offset-3">
+            <div class="token-image">
+              <img src="/img/personal.png" />
+            </div>
+            <h1 class="title is-2 is-light is-semibold is-spaced main-title">
+              I'm a customer
+            </h1>
+            <h2 class="subtitle is-4 is-light is-thin">
+              Loyalty benefits more flexible and easy to use than ever before. With our platform, you can exchange loyalty benefits across brands, giving you more control and choice over your rewards. And the best part? All your benefits are managed in one app, making it easy to keep track of everything in one place.
+            </h2>
+            <div class="cta-wrapper has-text-centered">
+                        <a
+                          href="mailto: adithya@pointswitch.xyz"
+                          class="button k-button k-primary raised has-gradient is-fat is-bold"
+                        >
+                          <span class="text">Sign up</span>
+                          <span class="front-gradient"></span>
+                        </a>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section is-medium">
+      <div class="container">
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <div class="columns is-vcentered">
+            <!-- Feature content -->
+            <div class="column is-5 is-offset-1">
+              <div class="side-feature-content">
+                <h3 class="title is-4 is-light">More flexibility & choice with your rewards</h3>
+                <div class="divider"></div>
+                <p class="is-light">
+                  You can choose from a wide range of benefits from our partner brands, hence you aren't constrained to any single brand's benefits.
+                  This means you can choose exactly which benefits you want and exchange them for other benefits on the platform,
+                  getting you the most value out of your loyalty rewards.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature image -->
+            <div class="column is-7">
+              <img
+                class="side-feature"
+                src="/img/illustrations/user-app.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="columns is-vcentered">
+            <!-- Feature image -->
+            <div class="column is-7">
+              <img
+                class="side-feature"
+                src="/img/illustrations/Instant-exchange.svg"
+                alt=""
+              />
+            </div>
+
+            <!-- Feature content -->
+            <div class="column is-5">
+              <div class="side-feature-content">
+                <h3 class="title is-4 is-light">Instantly use & exchange</h3>
+                <div class="divider"></div>
+                <p class="is-light">
+                  With PointSwitch you don't have to wait to use your benefits.
+                  Our platform uses a DEX-based mechanism to ensure instant exchange, so you can get the rewards you want, when you want them.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-vcentered">
+            <!-- Feature content -->
+            <div class="column is-5 is-offset-1">
+              <div class="side-feature-content">
+                <h3 class="title is-4 is-light">All your benefits in one place</h3>
+                <div class="divider"></div>
+                <p class="is-light">
+                  Manage all your loyalty benefits in one easy-to-use application.
+                  No more juggling multiple reward programs or trying to keep track of different expiration dates.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature image -->
+            <div class="column is-7">
+              <img
+                class="side-feature"
+                src="/img/illustrations/All-in-one-place.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <!-- /Content wrapper -->
+        <!-- /Content wrapper -->
+      </div>
+    </section>
+  </div>
+</Layout>

@@ -1,0 +1,92 @@
+<footer class="krypton-footer">
+  <div class="container">
+    <!-- Logo -->
+    <div class="footer-logo">
+      <a href="#">
+        <img src="/img/logo/PointSwitch_logo.svg" alt="" />
+        <div class="brand-subtitle">Exchange loyalty benefits across brands</div>
+      </a>
+    </div>
+
+    <!-- Columns -->
+    <div class="columns footer-columns is-vcentered">
+      <div class="column is-4">
+        <!-- Links group -->
+        <ul class="footer-links">
+          <li>
+            <a href="personal">Personal</a>
+          </li>
+          <li>
+            <a href="business">Business</a>
+          </li>
+          <li>
+            <a href="partner">Partner</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Newsletter -->
+      <div class="column is-4">
+        <div class="subscribe-block" id="subscribe">
+          <form action="https://sheetdb.io/api/v1/awv2ywbvcgv8z" method="POST" id="sheetdb-form">
+            <!-- Field -->
+            <div class="control">
+              <!-- Special input -->
+              <input
+                class="krypton-subscribe-input"
+                type="email"
+                name="data[email]"
+                placeholder="Email"
+              />
+              <button class="subscribe-button">
+                <span>Subscribe</span>
+              </button>
+            </div>
+          </form>
+
+          <script>
+            var form = document.getElementById('sheetdb-form');
+            form.addEventListener('submit', e => {
+              e.preventDefault();
+              fetch(form.action, {
+                method: 'POST',
+                body: new FormData(document.getElementById('sheetdb-form')),
+              })
+                .then(response => response.json())
+                .then(data => {
+                  alert('Thank you for subscribing!');
+                })
+                .catch(error => {
+                  alert('Error');
+                });
+            })
+        
+            ;
+
+          </script>
+        </div>
+      </div>
+      <!-- Links group -->
+      <div class="column is-4">
+        <ul class="footer-links">
+          <li>
+            <a href="about-us">About us</a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+    <!-- Data privacy -->
+    <br />
+     <a href="https://drive.google.com/uc?export=download&id=1ZShesOHhrhGluIE4HSO8OD4usgEixPBu">Our data privacy policy</a>
+    <!-- Copyright -->
+    <p class="k-copyright"> 2023 | PointSwitch Inc.</p>
+    <br />
+    <!-- Made by -->
+    <p class="coded-by">
+      Designed and Coded by Adithya Ravichandran & Levente Ludanyi
+    </p>
+  </div>
+
+  <!-- Absolute image -->
+  <img class="solar-system" src="/img/bg/solar.svg" alt="" />
+</footer>
