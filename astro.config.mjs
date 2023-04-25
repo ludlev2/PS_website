@@ -7,7 +7,6 @@ import vercel from '@astrojs/vercel/static';
 // https://astro.build/config
 export default defineConfig({
   //output: 'server',
-  //adapter: vercelStatic(),
   integrations: [Unfonts({
     google: {
       families: ['Cabin', {
@@ -16,5 +15,5 @@ export default defineConfig({
       }]
     }
   }), image()],
-  adapter: vercel()
+  //adapter: vercel()
 });
