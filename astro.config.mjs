@@ -1,7 +1,10 @@
 import { defineConfig } from 'astro/config';
 import Unfonts from 'unplugin-fonts/astro';
+import vercelServerless from '@astrojs/vercel/serverless'
+  
 import image from "@astrojs/image";
 
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,5 +16,6 @@ export default defineConfig({
         styles: 'wght@300;400'
       }]
     }
-  }), image()]
+  }), image()],
+  adapter: vercelServerless()
 });
