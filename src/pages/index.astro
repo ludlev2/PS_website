@@ -46,7 +46,19 @@ import heroImage from 'public/img/exchange-new.webp'
             </div>
             <!-- Hero image -->
             <div class="column is-7">
-               <img src="/img/Untitled_-Group-5.webp"  alt="" />
+             <img id="myImage" src="/img/static_exchange2.png" alt="Image">
+
+              <script>
+                  // Function to detect if the browser is Safari
+                  function isSafari() {
+                      return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+                  }
+
+                  // If the browser is not Safari, change the src attribute to load the WebP image
+                  if (!isSafari()) {
+                      document.getElementById("myImage").src = "/img/Untitled_-Group-5.webp";
+                  }
+              </script>
             </div>
           </div>
         </div>
@@ -209,8 +221,8 @@ import heroImage from 'public/img/exchange-new.webp'
                           </label>
                           <div class="accordion-content">
                             <p>
-                              Through exchangeability the value of a benefit exceed the value what only 1 brand can offer. <br />
-                               Moreover, through exchangeability brands know their customers signifianctly better as they can see what the customers truly desire. Hence, brands can provide more personalised and engaging experiental loyalty programs.
+                              Through exchangeability, the value of a benefit exceeds the value that only 1 brand can offer. <br />
+                              Moreover, through exchangeability brands know their customers significantly better as they can see what the customers truly desire. Hence, brands can provide more personalized and engaging experiential loyalty programs.
                             </p>
                           </div>
                         </div>
@@ -270,7 +282,7 @@ import heroImage from 'public/img/exchange-new.webp'
                           </label>
                           <div class="accordion-content">
                             <p>
-                              Our Whitepaper will be soon published. Stay tuned!
+                              Our Whitepaper will be published soon. Stay tuned!
                             </p>
                           </div>
                         </div>
@@ -287,13 +299,13 @@ import heroImage from 'public/img/exchange-new.webp'
                           </label>
                           <div class="accordion-content">
                             <p>
-                              Eventhough cashback solutions allow cross brand benefits, they are inherently not personalisable. 
-                              Moreover, the central token that can be collected through cashback does not to customer loyalty to any partner brands. There is no attachment to brands, using a cashback solution, all what matters is to get the central coin in some way. <br /> <br />
+                              Even though cashback solutions allow cross-brand benefits, they are inherently not personalizable. 
+                              Moreover, the central token that can be collected through cashback does not to customer loyalty to any partner brands. There is no attachment to brands, using a cashback solution, all that matters is to get the central coin in some way. <br /> <br />
 
                         
-                              Second of all, we are ver well-aware how precious the data is from loyalty programs. Due our underlying blockchain and encryption technology noone else (not even us) can access the data besides the company who owns it. We are not able to profit from this valuable data neither during our collaboration with brands nor after a potential aquisition from a bigger company. <br /> <br />
+                              Second of all, we are very well aware of how precious the data is from loyalty programs. Due to our underlying blockchain and encryption technology, no one else (not even us) can access the data besides the company that owns it. We are not able to profit from this valuable data both during our collaboration with brands and after a potential acquisition from a bigger company. <br /> <br />
                               
-                              Finally, we provide more utility than a cashback program. For instance with our mechanism loyalty based partnerships and collobarations are much more seemless. <br /> <br />
+                              Finally, we provide more utility than a cashback program. For instance, with our mechanism loyalty-based partnerships and collaborations are much more seamless. <br /> <br />
                               
                             </p>
                           </div>
