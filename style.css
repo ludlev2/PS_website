@@ -31,14 +31,14 @@ body{
 }
 
 .main-title h1{
-    font-size: 7rem;
+    font-size: 5rem;
     text-transform: uppercase;
     font-weight: 800;
     color: #555;
 }
 
 .main-title h2{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 300;
     text-transform: uppercase;
 }
