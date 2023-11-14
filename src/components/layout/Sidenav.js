@@ -164,7 +164,7 @@ function Sidenav({ color }) {
     <>
       <div className="brand">
         <img src={logo} alt="" />
-        <span>Muse Dashboard</span>
+        <span>Your company's dashboard</span>
       </div>
       <hr />
       <Menu theme="light" mode="inline">
@@ -249,23 +249,7 @@ function Sidenav({ color }) {
           </NavLink>
         </Menu.Item>
       </Menu>
-      <div className="aside-footer">
-        <div
-          className="footer-box"
-          style={{
-            background: color,
-          }}
-        >
-          <span className="icon" style={{ color }}>
-            {dashboard}
-          </span>
-          <h6>Need Help?</h6>
-          <p>Please check our docs</p>
-          <Button type="primary" className="ant-btn-sm ant-btn-block">
-            DOCUMENTATION
-          </Button>
-        </div>
-      </div>
+     
     </>
   );
 }

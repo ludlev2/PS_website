@@ -22,15 +22,15 @@ function LineChart() {
     <>
       <div className="linechart">
         <div>
-          <Title level={5}>Active Users</Title>
+          <Title level={5}>Cash Flow</Title>
           <Paragraph className="lastweek">
             than last week <span className="bnb2">+30%</span>
           </Paragraph>
         </div>
         <div className="sales">
           <ul>
-            <li>{<MinusOutlined />} Traffic</li>
-            <li>{<MinusOutlined />} Sales</li>
+            <li>{<MinusOutlined />} Costs</li>
+            <li>{<MinusOutlined />} Revenue</li>
           </ul>
         </div>
       </div>

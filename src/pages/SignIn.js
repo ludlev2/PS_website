@@ -22,7 +22,7 @@ import {
   Input,
   Switch,
 } from "antd";
-import signinbg from "../assets/images/img-signin.jpg";
+import signinbg from "../assets/images/sign-in.jpg";
 import {
   DribbbleOutlined,
   TwitterOutlined,
@@ -128,7 +128,7 @@ export default class SignIn extends Component {
         <Layout className="layout-default layout-signin">
           <Header>
             <div className="header-col header-brand">
-              <h5>Muse Dashboard</h5>
+              <h5>Your company's dashboard</h5>
             </div>
             <div className="header-col header-nav">
               <Menu mode="horizontal" defaultSelectedKeys={["1"]}>
@@ -158,9 +158,7 @@ export default class SignIn extends Component {
                 </Menu.Item>
               </Menu>
             </div>
-            <div className="header-col header-btn">
-              <Button type="primary">FREE DOWNLOAD</Button>
-            </div>
+      
           </Header>
           <Content className="signin">
             <Row gutter={[24, 0]} justify="space-around">
@@ -217,6 +215,7 @@ export default class SignIn extends Component {
                   </Form.Item>
 
                   <Form.Item>
+                    <Link to="/home">
                     <Button
                       type="primary"
                       htmlType="submit"
@@ -224,6 +223,7 @@ export default class SignIn extends Component {
                     >
                       SIGN IN
                     </Button>
+                    </Link>
                   </Form.Item>
                   <p className="font-semibold text-muted">
                     Don't have an account?{" "}
@@ -279,10 +279,7 @@ export default class SignIn extends Component {
                 <Link to="#">{<GithubOutlined />}</Link>
               </Menu.Item>
             </Menu>
-            <p className="copyright">
-              {" "}
-              Copyright © 2021 Muse by <a href="#pablo">Creative Tim</a>.{" "}
-            </p>
+            Contact us at <a href="mailto:adithya@pointswitch.xyz">adithya@pointswitch.xyz</a>
           </Footer>
         </Layout>
       </>
