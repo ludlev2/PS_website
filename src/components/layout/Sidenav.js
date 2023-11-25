@@ -86,6 +86,7 @@ function Sidenav({ color }) {
     </svg>,
   ];
 
+  {/*
   const rtl = [
     <svg
       width="20"
@@ -103,6 +104,7 @@ function Sidenav({ color }) {
       ></path>
     </svg>,
   ];
+  */}
 
   const profile = [
     <svg
@@ -181,6 +183,7 @@ function Sidenav({ color }) {
             <span className="label">Dashboard</span>
           </NavLink>
         </Menu.Item>
+        {/*}
         <Menu.Item key="2">
           <NavLink to="/tables">
             <span
@@ -194,6 +197,7 @@ function Sidenav({ color }) {
             <span className="label">Tables</span>
           </NavLink>
         </Menu.Item>
+        */}
         <Menu.Item key="3">
           <NavLink to="/billing">
             <span
@@ -202,24 +206,13 @@ function Sidenav({ color }) {
                 background: page === "billing" ? color : "",
               }}
             >
-              {billing}
+              {tables}
             </span>
-            <span className="label">Billing</span>
+            <span className="label">Invoices</span>
           </NavLink>
         </Menu.Item>
-        <Menu.Item key="4">
-          <NavLink to="/rtl">
-            <span
-              className="icon"
-              style={{
-                background: page === "rtl" ? color : "",
-              }}
-            >
-              {rtl}
-            </span>
-            <span className="label">RTL</span>
-          </NavLink>
-        </Menu.Item>
+        
+       
         <Menu.Item className="menu-item-header" key="5">
           Account Pages
         </Menu.Item>
@@ -236,7 +229,7 @@ function Sidenav({ color }) {
             <span className="label">Profile</span>
           </NavLink>
         </Menu.Item>
-        <Menu.Item key="7">
+       {/* <Menu.Item key="7">
           <NavLink to="/sign-in">
             <span className="icon">{signin}</span>
             <span className="label">Sign In</span>
@@ -247,7 +240,7 @@ function Sidenav({ color }) {
             <span className="icon">{signup}</span>
             <span className="label">Sign Up</span>
           </NavLink>
-        </Menu.Item>
+        </Menu.Item> */}
       </Menu>
      
     </>

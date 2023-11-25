@@ -1,13 +1,14 @@
 const lineChart = {
   series: [
     {
-      name: "Mobile apps",
-      data: [350, 40, 300, 220, 500, 250, 400, 230, 500],
+      name: "Outflows",
+      data: [3, 8, 13, 28, 40, 57, 68, 81, 89, 88],
+
       offsetY: 0,
     },
     {
-      name: "Websites",
-      data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+      name: "Inflows",
+      data: [20, 40, 40, 69, 70, 81, 85, 92, 90, 96],
       offsetY: 0,
     },
   ],
@@ -23,7 +24,7 @@ const lineChart = {
     },
 
     legend: {
-      show: false,
+      show: true,
     },
 
     dataLabels: {
@@ -58,6 +59,7 @@ const lineChart = {
             "#8c8c8c",
             "#8c8c8c",
             "#8c8c8c",
+            "#8c8c8c",
           ],
         },
       },
@@ -71,6 +73,7 @@ const lineChart = {
         "Aug",
         "Sep",
         "Oct",
+        "Nov",
       ],
     },
 

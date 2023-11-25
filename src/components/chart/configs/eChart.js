@@ -1,8 +1,8 @@
 const eChart = {
   series: [
     {
-      name: "Sales",
-      data: [450, 200, 100, 220, 500, 100, 400, 230, 500],
+      name: "Subsidiaries",
+      data: [450, 200, 100, 220, 500],
       color: "#fff",
     },
   ],
@@ -27,6 +27,7 @@ const eChart = {
     dataLabels: {
       enabled: false,
     },
+  
     stroke: {
       show: true,
       width: 1,
@@ -39,15 +40,11 @@ const eChart = {
     },
     xaxis: {
       categories: [
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
+        "London",
+        "Warsaw",
+        "Paris",
+        "Sao Paulo",
+        "Miami",
       ],
       labels: {
         show: true,
@@ -60,12 +57,7 @@ const eChart = {
             "#fff",
             "#fff",
             "#fff",
-            "#fff",
-            "#fff",
-            "#fff",
-            "#fff",
-            "#fff",
-            "#fff",
+            "#fff",         
           ],
         },
       },
@@ -83,11 +75,7 @@ const eChart = {
             "#fff",
             "#fff",
             "#fff",
-            "#fff",
-            "#fff",
-            "#fff",
-            "#fff",
-            "#fff",
+          
           ],
         },
       },
@@ -96,7 +84,7 @@ const eChart = {
     tooltip: {
       y: {
         formatter: function (val) {
-          return "$ " + val + " thousands";
+          return "$" + val + " thousands";
         },
       },
     },

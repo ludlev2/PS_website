@@ -34,17 +34,21 @@ import Paragraph from "antd/lib/typography/Paragraph";
 import Echart from "../components/chart/EChart";
 import LineChart from "../components/chart/LineChart";
 
-import ava1 from "../assets/images/logo-shopify.svg";
-import ava2 from "../assets/images/logo-atlassian.svg";
-import ava3 from "../assets/images/logo-slack.svg";
-import ava4 from "../assets/images/logo-spotify.svg";
-import ava5 from "../assets/images/logo-jira.svg";
-import ava6 from "../assets/images/logo-invision.svg";
-import team1 from "../assets/images/team-1.jpg";
-import team2 from "../assets/images/team-2.jpg";
-import team3 from "../assets/images/team-3.jpg";
-import team4 from "../assets/images/team-4.jpg";
-import card from "../assets/images/info-card-1.jpg";
+import ava1 from "../assets/images/logo_pied_piper.webp";
+import ava2 from "../assets/images/logo_hooli.png";
+import ava3 from "../assets/images/logo-aviato.jpeg";
+import ava4 from "../assets/images/logo_nucleus.webp";
+import ava5 from "../assets/images/logo_sliceline.jpeg";
+import ava6 from "../assets/images/logo_tres_comas.jpeg";
+import richard from "../assets/images/richard.webp";
+import erlich from "../assets/images/erlich.webp";
+import galvin from "../assets/images/galvin.jpeg";
+import russ from "../assets/images/russ.jpeg";
+import bighead from "../assets/images/bighead.jpeg";
+import duncan from "../assets/images/duncan.jpeg";
+
+
+
 
 function Home() {
   const { Title, Text } = Typography;
@@ -122,6 +126,9 @@ function Home() {
       ></path>
     </svg>,
   ];
+
+
+
   const cart = [
     <svg
       width="22"
@@ -143,28 +150,28 @@ function Home() {
     {
       today: "Total cash",
       title: "$1,5M",
-      persent: "+30%",
+      persent: "+5%",
       icon: dollor,
       bnb: "bnb2",
     },
     {
-      today: "Today’s Users",
-      title: "3,200",
-      persent: "+20%",
-      icon: profile,
+      today: "Total account payables",
+      title: "$2,5M",
+      persent: "+2%",
+      icon: dollor,
       bnb: "bnb2",
-    },
+    }, 
     {
-      today: "New Clients",
-      title: "+1,200",
-      persent: "-20%",
+      today: "Total account receivables",
+      title: "$1,3M",
+      persent: "-3%",
       icon: heart,
       bnb: "redtext",
     },
     {
-      today: "New Orders",
-      title: "$13,200",
-      persent: "10%",
+      today: "Total FX exposure",
+      title: "$0,2M",
+      persent: "-2%",
       icon: cart,
       bnb: "bnb2",
     },
@@ -173,103 +180,98 @@ function Home() {
   const list = [
     {
       img: ava1,
-      Title: "Soft UI Shopify Version",
+      Title: "Pied Piper",
       bud: "$14,000",
       progress: <Progress percent={60} size="small" />,
+      date: "Jun 9, 2024",
       member: (
         <div className="avatar-group mt-2">
-          <Tooltip placement="bottom" title="Ryan Tompson">
-            <img className="tootip-img" src={team1} alt="" />
-          </Tooltip>
-          <Tooltip placement="bottom" title="Romina Hadid">
-            <img className="tootip-img" src={team2} alt="" />
-          </Tooltip>
-          <Tooltip placement="bottom" title="Alexander Smith">
-            <img className="tootip-img" src={team3} alt="" />
-          </Tooltip>
-          <Tooltip placement="bottom" title="Jessica Doe">
-            <img className="tootip-img" src={team4} alt="" />
+          <Tooltip placement="bottom" title="Richard Hendricks">
+            <img className="tootip-img" src={richard} alt="" />
+
+            <span className="text-xs font-weight-bold">
+              <td>Richard Hendricks</td>
+            </span>
           </Tooltip>
         </div>
       ),
     },
     {
       img: ava2,
-      Title: "Progress Track",
+      Title: "Hooli",
       bud: "$3,000",
       progress: <Progress percent={10} size="small" />,
+      date: "Dec 30, 2023",
       member: (
         <div className="avatar-group mt-2">
-          <Tooltip placement="bottom" title="Ryan Tompson">
-            <img className="tootip-img" src={team1} alt="" />
-          </Tooltip>
-          <Tooltip placement="bottom" title="Romina Hadid">
-            <img className="tootip-img" src={team2} alt="" />
+          <Tooltip placement="bottom" title="Galvin Belson">
+            <img className="tootip-img" src={galvin} alt="" />
+            <span className="text-xs font-weight-bold">
+              <td>Galvin Belson</td>
+            </span>
           </Tooltip>
         </div>
       ),
+
     },
     {
       img: ava3,
-      Title: "Fix Platform Errors",
+      Title: "Aviato",
       bud: "Not Set",
       progress: <Progress percent={100} size="small" status="active" />,
+      date: "Mar 15, 2024",
       member: (
         <div className="avatar-group mt-2">
-          <Tooltip placement="bottom" title="Ryan Tompson">
-            <img className="tootip-img" src={team1} alt="" />
-          </Tooltip>
-          <Tooltip placement="bottom" title="Romina Hadid">
-            <img className="tootip-img" src={team1} alt="" />
-          </Tooltip>
-          <Tooltip placement="bottom" title="Alexander Smith">
-            <img className="tootip-img" src={team3} alt="" />
+          <Tooltip placement="bottom" title="Erlich Bachman">
+            <img className="tootip-img" src={erlich} alt="" />
+            <span className="text-xs font-weight-bold">
+              <td>Erlich Bachman</td>
+            </span>
           </Tooltip>
         </div>
       ),
+
     },
     {
       img: ava4,
-      Title: "Launch new Mobile App",
+      Title: "Nucleus",
       bud: "$20,600",
       progress: <Progress percent={100} size="small" status="active" />,
+      date: "May 5, 2024",
       member: (
         <div className="avatar-group mt-2">
-          <Tooltip placement="bottom" title="Ryan Tompson">
-            <img className="tootip-img" src={team1} alt="" />
-          </Tooltip>
-          <Tooltip placement="bottom" title="Romina Hadid">
-            <img className="tootip-img" src={team2} alt="" />
+          <Tooltip placement="bottom" title="Big Head">
+            <img className="tootip-img" src={bighead} alt="" />
+            <span className="text-xs font-weight-bold">
+              <td>Big Head</td>
+            </span>
           </Tooltip>
         </div>
       ),
+
     },
     {
       img: ava5,
-      Title: "Add the New Landing Page",
+      Title: "SliceLine",
       bud: "$4,000",
       progress: <Progress percent={80} size="small" />,
+      date: "May 26, 2024",
       member: (
         <div className="avatar-group mt-2">
-          <Tooltip placement="bottom" title="Ryan Tompson">
-            <img className="tootip-img" src={team1} alt="" />
-          </Tooltip>
-          <Tooltip placement="bottom" title="Romina Hadid">
-            <img className="tootip-img" src={team2} alt="" />
-          </Tooltip>
-          <Tooltip placement="bottom" title="Alexander Smith">
-            <img className="tootip-img" src={team3} alt="" />
-          </Tooltip>
-          <Tooltip placement="bottom" title="Jessica Doe">
-            <img className="tootip-img" src={team4} alt="" />
+          <Tooltip placement="bottom" title="Duncan">
+            <img className="tootip-img" src={duncan} alt="" />
+            <span className="text-xs font-weight-bold">
+              <td>Duncan</td>
+            </span>
           </Tooltip>
         </div>
       ),
+
     },
 
     {
       img: ava6,
-      Title: "Redesign Online Store",
+      Title: "Tres Comas",
       bud: "$2,000",
       progress: (
         <Progress
@@ -279,16 +281,18 @@ function Home() {
           format={() => "Cancel"}
         />
       ),
+      date: "Apr 27, 2024",
       member: (
         <div className="avatar-group mt-2">
           <Tooltip placement="bottom" title="Ryan Tompson">
-            <img className="tootip-img" src={team1} alt="" />
-          </Tooltip>
-          <Tooltip placement="bottom" title="Romina Hadid">
-            <img className="tootip-img" src={team2} alt="" />
+            <img className="tootip-img" src={russ} alt="" />
+            <span className="text-xs font-weight-bold">
+              <td>Russ Hanneman</td>
+            </span>
           </Tooltip>
         </div>
       ),
+
     },
   ];
 
@@ -391,17 +395,17 @@ function Home() {
             <Card bordered={false} className="criclebox cardbody h-full">
               <div className="project-ant">
                 <div>
-                  <Title level={5}>Projects</Title>
+                  <Title level={5}>Outstanding accounts</Title>
                   <Paragraph className="lastweek">
-                    done this month<span className="blue">40%</span>
+                    <span className="blue">+15%</span> outstanding accounts this month
                   </Paragraph>
                 </div>
                 <div className="ant-filtertabs">
                   <div className="antd-pro-pages-dashboard-analysis-style-salesExtra">
                     <Radio.Group onChange={onChange} defaultValue="a">
                       <Radio.Button value="a">ALL</Radio.Button>
-                      <Radio.Button value="b">ONLINE</Radio.Button>
-                      <Radio.Button value="c">STORES</Radio.Button>
+                      <Radio.Button value="b">Payables</Radio.Button>
+                      <Radio.Button value="c">Receivables</Radio.Button>
                     </Radio.Group>
                   </div>
                 </div>
@@ -411,7 +415,8 @@ function Home() {
                   <thead>
                     <tr>
                       <th>COMPANIES</th>
-                      <th>MEMBERS</th>
+                      <th>MEMBER</th>
+                      <th>DATE</th>
                       <th>BUDGET</th>
                       <th>COMPLETION</th>
                     </tr>
@@ -430,6 +435,11 @@ function Home() {
                           </h6>
                         </td>
                         <td>{d.member}</td>
+                        <td><span className="text-xs font-weight-bold">
+                          {d.date}{" "}
+                        </span>
+                        </td>
+
                         <td>
                           <span className="text-xs font-weight-bold">
                             {d.bud}{" "}

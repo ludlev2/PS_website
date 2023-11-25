@@ -95,31 +95,7 @@ function Main({ children }) {
         <Sidenav color={sidenavColor} />
       </Sider>
       <Layout>
-        {fixed ? (
-          <Affix>
-            <AntHeader className={`${fixed ? "ant-header-fixed" : ""}`}>
-              <Header
-                onPress={openDrawer}
-                name={pathname}
-                subName={pathname}
-                handleSidenavColor={handleSidenavColor}
-                handleSidenavType={handleSidenavType}
-                handleFixedNavbar={handleFixedNavbar}
-              />
-            </AntHeader>
-          </Affix>
-        ) : (
-          <AntHeader className={`${fixed ? "ant-header-fixed" : ""}`}>
-            <Header
-              onPress={openDrawer}
-              name={pathname}
-              subName={pathname}
-              handleSidenavColor={handleSidenavColor}
-              handleSidenavType={handleSidenavType}
-              handleFixedNavbar={handleFixedNavbar}
-            />
-          </AntHeader>
-        )}
+       
         <Content className="content-ant">{children}</Content>
         <Footer />
       </Layout>

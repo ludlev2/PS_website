@@ -174,7 +174,7 @@ function Profile() {
                 <Avatar size={74} shape="square" src={profilavatar} />
 
                 <div className="avatar-info">
-                  <h4 className="font-semibold m-0">Sarah Jacob</h4>
+                  <h4 className="font-semibold m-0">Marc Gates</h4>
                   <p>CEO / Co-Founder</p>
                 </div>
               </Avatar.Group>
@@ -188,11 +188,12 @@ function Profile() {
                 justifyContent: "flex-end",
               }}
             >
+              {/*
               <Radio.Group defaultValue="a">
                 <Radio.Button value="a">OVERVIEW</Radio.Button>
                 <Radio.Button value="b">TEAMS</Radio.Button>
                 <Radio.Button value="c">PROJECTS</Radio.Button>
-              </Radio.Group>
+              </Radio.Group> */}
             </Col>
           </Row>
         }
@@ -312,6 +313,7 @@ function Profile() {
           </Card>
         </Col>
       </Row>
+      {/*}
       <Card
         bordered={false}
         className="header-solid mb-24"
@@ -322,6 +324,7 @@ function Profile() {
           </>
         }
       >
+        
         <Row gutter={[24, 24]}>
           {project.map((p, index) => (
             <Col span={24} md={12} xl={6} key={index}>
@@ -368,6 +371,7 @@ function Profile() {
           </Col>
         </Row>
       </Card>
+              */}
     </>
   );
 }

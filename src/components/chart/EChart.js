@@ -39,22 +39,24 @@ function EChart() {
   return (
     <>
       <div id="chart">
+        <Title level={1}>Subsidiaries</Title>
+        <Paragraph className="lastweek">
+          <span className="bnb2">+10%</span> than last week
+        </Paragraph>
         <ReactApexChart
           className="bar-chart"
           options={eChart.options}
           series={eChart.series}
           type="bar"
-          height={220}
+          height={280}
         />
       </div>
+
+      {/*
       <div className="chart-vistior">
-        <Title level={5}>Active Users</Title>
+
         <Paragraph className="lastweek">
-          than last week <span className="bnb2">+30%</span>
-        </Paragraph>
-        <Paragraph className="lastweek">
-          We have created multiple options for you to put together and customise
-          into pixel perfect pages.
+          More stats
         </Paragraph>
         <Row gutter>
           {items.map((v, index) => (
@@ -66,7 +68,7 @@ function EChart() {
             </Col>
           ))}
         </Row>
-      </div>
+      </div> */}
     </>
   );
 }

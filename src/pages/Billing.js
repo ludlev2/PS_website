@@ -221,12 +221,13 @@ function Billing() {
       title: "Lucas Harper",
       description: "Stone Tech Zone",
       address: "lucas@syone-tech.com",
-      vat: "FRB1235476",
+      vat: "FRB1335421",
     },
     {
-      title: "Oliver Liam",
-      description: "ethan@fiber.com",
-      vat: "NumberFRB1235476",
+      title: "Ethan Fiber",
+      description: "Stone ss Zone",
+      address: "ethan@fiber.com",
+      vat: "FRB1333376",
     },
   ];
   const calender = [
