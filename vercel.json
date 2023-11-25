@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+        {
+            "source": "/:match*",
+            "destination": "https://pointswitch.xyz/:match*"
+        },
+        {
+            "source": "/demo/:match*",
+            "destination": "https://project2.vercel.app/demo/:match*"
+        }
+    ]
+}
