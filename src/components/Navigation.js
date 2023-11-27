@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Button from "./Button";
 import Logo from "./Logo";
 
+
 const Section = styled.section`
   width: 100vw;
   background-color: ${(props) => props.theme.body};
@@ -155,19 +156,19 @@ const Navigation = () => {
         </HamburgerMenu>
         <Menu click={+click}>
           <MenuItem onClick={() => scrollTo("home")}>Home</MenuItem>
-          <MenuItem onClick={() => scrollTo("demo")}>Demo</MenuItem>
+         {/* <MenuItem onClick={() => scrollTo("demo")}>Demo</MenuItem> */}
          {/* <MenuItem onClick={() => scrollTo("about")}>About</MenuItem> */}
-          <MenuItem onClick={() => scrollTo("roadmap")}>Roadmap</MenuItem>
+          <MenuItem onClick={() => scrollTo("roadmap")}>Solution</MenuItem>
           <MenuItem onClick={() => scrollTo("team")}>Team</MenuItem>
           <MenuItem onClick={() => scrollTo("faq")}>Faq</MenuItem>
           <MenuItem>
             <div className="mobile">
-              <Button text="Join the waiting list" link="https://google.com" />
+              <Button text="Try out the Demo" link="https://demo.pointswitch.xyz" />
             </div>
           </MenuItem>
         </Menu>
         <div className="desktop">
-          <Button text="Join the waiting list" link="https://google.com" />
+          <Button text="Try out the Demo" link="https://demo.pointswitch.xyz" />
         </div>
       </NavBar>
     </Section>

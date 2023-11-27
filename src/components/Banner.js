@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import logo from '../assets/logo/PointSwitch.png';
 import img1 from '../assets/Nfts/bighead.svg';
 import img2 from '../assets/Nfts/bighead-1.svg';
 import img3 from '../assets/Nfts/bighead-2.svg';
@@ -139,18 +140,13 @@ const Banner = () => {
   return (
     <Section>
         <ImgContainer>
-            <img width={500} height={400}  src={img1} alt="The Weirdos" />
-            <img width={500} height={400}  src={img2} alt="The Weirdos" />
-            <img width={500} height={400}  src={img3} alt="The Weirdos" />
-            <img width={500} height={400}  src={img4} alt="The Weirdos" />
-            <img width={500} height={400}  src={img5} alt="The Weirdos" />
-            <img width={500} height={400}  src={img6} alt="The Weirdos" />
-
+        {/* Add logo img here max size */}
+            <img src={logo} alt="PointSwitch" />
         </ImgContainer>
-        <Title>Join the  <br /> weirdos club  </Title>
+        <Title> </Title>
         <BtnContainer>
         <JoiNow href={"/#"} target='_blank'>
-            Join Now
+            Join the waiting list
         </JoiNow>
 
         </BtnContainer>

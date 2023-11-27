@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Typewriter from "typewriter-effect";
 import Button from './Button';
 
+
+
 const Title = styled.h2`
   font-size: ${(props) => props.theme.fontxxl};
   text-transform: capitalize;
@@ -73,10 +75,20 @@ const ButtonContainer = styled.div`
   }
 
 `
+
+const EmailInput = styled.input`
+  width: 100%;
+  padding: 0.5em;
+  margin: 1em 0;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+`;
+
 const TypeWriterText = () => {
   return (
     <>
-        <Title>
+      <Title fontSize="1px">
       Overview your finances across subsidiaries with ease
       <Typewriter
         options={{
@@ -84,14 +96,14 @@ const TypeWriterText = () => {
           loop: true,
         }}
         onInit={(typewriter) => {
-          typewriter
-            .typeString(`<span class="text-1">Consolidate your cash</span>`)
-            .pauseFor(2000)
-            .deleteAll()
+          typewriter          
             .typeString(`<span class="text-2">Consolidate open accounts</span>`)
             .pauseFor(2000)
             .deleteAll()
             .typeString(`<span class="text-3"> Reconcile in real time</span>`)
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString(`<span class="text-1">Forecast and monitor cash flow by entity</span>`)
             .pauseFor(2000)
             .deleteAll()
             .start();
@@ -101,6 +113,8 @@ const TypeWriterText = () => {
     </Title>
     <SubTitle>Everything in real time</SubTitle>
     <ButtonContainer>
+
+    <EmailInput type="email" placeholder="Enter your email" />
     <Button text="Join the waiting list" link="#about" />
     </ButtonContainer>
     </>

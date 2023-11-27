@@ -42,9 +42,6 @@ const Loading = () => {
     return (
       
         <Loader>
-          
-            
-
             <Spinner>
               <div />
               <div />

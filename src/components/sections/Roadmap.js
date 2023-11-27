@@ -3,6 +3,8 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useLayoutEffect, useRef } from "react";
 import styled from "styled-components";
 import DrawSvg from "../DrawSvg";
+import BankAnimation from "../BankAnimation";
+
 
 const Section = styled.section`
   min-height: 100vh;
@@ -108,6 +110,7 @@ const Item = styled.li`
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: row;
 
   @media (max-width: 48em) {
     justify-content: flex-end !important;
@@ -157,12 +160,19 @@ const Text = styled.span`
   }
 `;
 
-const RoadMapItem = ({ title, subtext, addToRef }) => {
+
+
+const RoadMapItem = ({ title, subtext, addToRef, hasSvgAnimation }) => {
   return (
     <Item ref={addToRef}>
+      {hasSvgAnimation && (
+        <SvgContainer>
+          <BankAnimation />
+        </SvgContainer>
+      )}
       <ItemContainer>
         <Box>
-          <SubTitle>{title} </SubTitle>
+          <SubTitle>{title}</SubTitle>
           <Text>{subtext}</Text>
         </Box>
       </ItemContainer>
@@ -209,9 +219,10 @@ const Roadmap = () => {
     };
   }, []);
 
+
   return (
     <Section id="roadmap">
-      <Title>Roadmap</Title>
+      <Title>Our solution</Title>
       <Container>
         <SvgContainer>
           <DrawSvg />
@@ -220,28 +231,34 @@ const Roadmap = () => {
           <Item>&nbsp;</Item>
           <RoadMapItem
             addToRef={addToRefs}
-            title="Grand Opening"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            title="Brings together all of your bank accounts"
+            subtext=""
+            hasSvgAnimation={true}
           />
           <RoadMapItem
             addToRef={addToRefs}
-            title="Great Benefits"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            title="Label and categorise transactions"
+            subtext=""
           />
           <RoadMapItem
             addToRef={addToRefs}
-            title="Early Access"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            title="Consolidates all of your open accounts"
+            subtext=""
           />
           <RoadMapItem
             addToRef={addToRefs}
-            title="New Merch"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            title="Match invoices to payments"
+            subtext=""
           />
           <RoadMapItem
             addToRef={addToRefs}
-            title="Holders Ranking"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            title="Display the relevant financial information"
+            subtext="You can dig deep into the fundamental causes of your changed cash flow"
+          />
+          <RoadMapItem
+            addToRef={addToRefs}
+            title="Make decisions considering every scenario"
+            subtext=""
           />
         </Items>
       </Container>

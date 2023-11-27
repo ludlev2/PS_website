@@ -20,7 +20,7 @@ import { ThemeProvider } from "styled-components";
 // const ScrollToTop = lazy(() => import("./components/ScrollToTop"));
 
 import Navigation from "./components/Navigation";
-// import About from "./components/sections/About";
+import About from "./components/sections/About";
 import Home from "./components/sections/Home";
 import Roadmap from "./components/sections/Roadmap";
 import Team from "./components/sections/Team";
@@ -37,10 +37,10 @@ function App() {
         {/* <Suspense fallback={<Loading />}> */}
           <Navigation />
           <Home />
-          <Demo />
-        {/*  
-          <About />
-          */}
+        {/*<Demo /> */}
+        
+        {/*<About /> */}
+          
           <Roadmap />
           <Team />
           <Faq />

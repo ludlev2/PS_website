@@ -5,6 +5,9 @@ import styled, { keyframes } from 'styled-components'
 // import RoundTextBlack from '../../assets/Rounded-Text-Black.png';
 import Loading from '../Loading';
 
+import dashboard from '../../assets/dashboard.png';
+
+
 const CoverVideo = lazy(() => import('../CoverVideo'));
 const TypeWriterText = lazy(() => import('../TypeWriterText'));
 
@@ -48,18 +51,30 @@ align-items: center;
 
 
 
+// Define a styled component for your image
+const FloatingImage = styled.img`
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease-out;
+  width: 550px; 
+  height: auto; 
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+`;
+
 const Home = () => {
   return (
     <Section id="home">
       <Container>
-      <Box>
-        <Suspense fallback={<Loading />}>
-          <TypeWriterText /></Suspense>
+        <Box>
+          <Suspense fallback={<Loading />}>
+            <TypeWriterText /></Suspense>
         </Box>
         <Box>
-        <Suspense fallback={<Loading />}>
-          <CoverVideo /></Suspense>
-          
+          <Suspense fallback={<Loading />}>
+            <FloatingImage src={dashboard} alt='Dashboard'/> {" "}</Suspense>
+
         </Box>
       </Container>
     </Section>
