@@ -68,7 +68,7 @@ border-radius: 20px;
 
 &:hover{
   img{
-    transform: translateY(-2rem) scale(1.2);
+    transform: scale(1.1);
   }
 }
 
@@ -116,12 +116,13 @@ color: ${props => `rgba(${props.theme.textRgba},0.9)`};
 font-weight:400;
 `
 
-const MemberComponent = ({img, name=" ",position=" "}) => {
-
-  return(
+const MemberComponent = ({ img, name = " ", position = " ", linkedin = "" }) => {
+  return (
     <Item>
       <ImageContainer>
-        <img width={500} height={400}  src={img} alt={name} />
+        <a href={linkedin} target="_blank" rel="noopener noreferrer">
+          <img width={500} height={400} src={img} alt={name} />
+        </a>
       </ImageContainer>
       <Name>{name}</Name>
       <Position>{position}</Position>
@@ -137,9 +138,9 @@ const Team = () => {
     <ConfettiComponent  /> </Suspense>
       <Title>Team</Title>
       <Container>
-        <MemberComponent img={img1}  name="Fryderyk" position="Co-Founder" />
-        <MemberComponent img={img2}  name="Adithya" position="Co-Founder" />
-        <MemberComponent img={img3}  name="Levente" position="Co-Founder" />
+        <MemberComponent img={img1} name="Fryderyk" position="Co-Founder" linkedin="https://www.linkedin.com/in/fryderyksitnik/" />
+        <MemberComponent img={img2} name="Adithya" position="Co-Founder" linkedin="https://www.linkedin.com/in/adithya-ravichandran/"/>
+        <MemberComponent img={img3} name="Levente" position="Co-Founder" linkedin="https://www.linkedin.com/in/levente-ludanyi/" />
       </Container>
     </Section>
   )

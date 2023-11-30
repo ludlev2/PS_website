@@ -37,13 +37,21 @@ const Btn = styled.a`
   }
 `;
 
-const Button = ({ text, link="#", newTab = false }) => {
+const Button = ({ text, link = "#", newTab = false, onClick }) => {
+  const handleClick = (event) => {
+    if (onClick) {
+      event.preventDefault(); // Prevent navigation
+      onClick(event);
+    }
+  };
+
   return (
     <Btn
       href={link}
       aria-label={text}
       target={newTab ? "_blank" : "_self"}
       rel="noreferrer"
+      onClick={handleClick} // Use handleClick here
     >
       {text}
     </Btn>

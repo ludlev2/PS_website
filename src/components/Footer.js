@@ -140,7 +140,7 @@ const Footer = () => {
     <Left> 
     <Logo />
     <IconList>
-      <a href="http://facebook.com" target='_blank' 
+      {/*<a href="http://facebook.com" target='_blank' 
       rel="noopener noreferrer"
       aria-label='facebook'
       >
@@ -151,14 +151,14 @@ const Footer = () => {
       aria-label='instagram'
       >
         <Instagram />
-      </a>
-      <a href="https://twitter.com/code_bucks" target='_blank' 
+      </a> */}
+      <a href="https://twitter.com/PointSwitch42" target='_blank' 
       rel="noopener noreferrer"
       aria-label='twitter'
       >
         <Twitter />
       </a>
-      <a href="https://www.linkedin.com/in/codebucks/" target='_blank' 
+      <a href="https://www.linkedin.com/company/pointswitch/" target='_blank' 
       rel="noopener noreferrer"
       aria-label='linkedin'
       >
@@ -168,22 +168,20 @@ const Footer = () => {
     </Left>
     <MenuItems>
     <Item onClick={() => scrollTo('home')}  >Home</Item>
-          <Item onClick={() => scrollTo('demo')}  >Demo</Item>
+          {/* <Item onClick={() => scrollTo('demo')}  >Demo</Item> */}
         {/*  <Item onClick={() => scrollTo('about')}  >About</Item> */}
           <Item onClick={() => scrollTo('roadmap')}  >Roadmap</Item>
           <Item onClick={() => scrollTo('team')}  >Team</Item>
-          <Item onClick={() => scrollTo('faq')}  >Faq</Item>
+          {/* <Item onClick={() => scrollTo('faq')}  >Faq</Item> */}
 
     </MenuItems>
       </Container>
       <Bottom>
         <span>
-          &copy; {new Date().getFullYear()} Weirdos Club. All rights reserved.
+          &copy; {new Date().getFullYear()} PointSwitch
         </span>
         <span>
-          Made with &#10084; by <a href="https://devdreaming.com/about" target="_blank" rel="dofollow noreferrer">
-            CodeBucks
-          </a>
+          Coded by Leveleve02
         </span>
       </Bottom>
     </Section>

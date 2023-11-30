@@ -29,6 +29,10 @@ import Demo from "./components/sections/Demo";
 import Faq from "./components/sections/Faq";
 import ScrollToTop from "./components/ScrollToTop";
 
+
+
+
+
 function App() {
   return (
     <main>
@@ -43,7 +47,7 @@ function App() {
           
           <Roadmap />
           <Team />
-          <Faq />
+        {/*<Faq /> */}
           <Footer />
           {/* <ScrollToTop scrollPosition={y}/> */}
           <ScrollToTop />{" "}

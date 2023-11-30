@@ -160,7 +160,7 @@ const Navigation = () => {
          {/* <MenuItem onClick={() => scrollTo("about")}>About</MenuItem> */}
           <MenuItem onClick={() => scrollTo("roadmap")}>Solution</MenuItem>
           <MenuItem onClick={() => scrollTo("team")}>Team</MenuItem>
-          <MenuItem onClick={() => scrollTo("faq")}>Faq</MenuItem>
+          {/* <MenuItem onClick={() => scrollTo("faq")}>Faq</MenuItem> */}
           <MenuItem>
             <div className="mobile">
               <Button text="Try out the Demo" link="https://demo.pointswitch.xyz" />
