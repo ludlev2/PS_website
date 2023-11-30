@@ -5,55 +5,8 @@ import styled from "styled-components";
 import DrawSvg from "../DrawSvg";
 import BankAnimation from "../BankAnimation";
 import dashboard from "../../assets/PS_Dashboard.png";
+import reconc from "../../assets/reconc.png";
 
-const Row = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-`;
-
-const BankAnimationContainer = styled.div`
-  position: absolute;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -1600px;
-
-   @media (max-width: 768px) { // you can adjust the breakpoint as needed
-    display: none;
-`;
-
-const ReconcileAnimationContainer = styled.div`
-  position: absolute;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -200px;
-
-   @media (max-width: 768px) { // you can adjust the breakpoint as needed
-    display: none;
-`;
-
-const DashboardAnimationContainer = styled.div`
-  position: absolute;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1600px;
-  margin-right: -100px;
-
-  img {
-    max-width: 450px;  // This will ensure that the image is not larger than its container
-    height: auto;  // This will maintain the image's aspect ratio
-  }
-
-   @media (max-width: 768px) { // you can adjust the breakpoint as needed
-    display: none;
-`;
 
 const Section = styled.section`
   min-height: 150vh;
@@ -81,7 +34,7 @@ const Title = styled.h1`
 `;
 const Container = styled.div`
   width: 70%;
-  height: 300vh;
+  height: 400vh;
   background-color: ${(props) => props.theme.body};
   margin: 0 auto;
   display: flex;
@@ -96,13 +49,7 @@ const Container = styled.div`
     width: 90%;
   }
 `;
-const SvgContainerBank = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: -50px;
-  
-`;
+
 
 const SvgContainer = styled.div`
   display: flex;
@@ -111,10 +58,6 @@ const SvgContainer = styled.div`
   
 `;
 
-const AbsoluteSvgContainer = styled(SvgContainer)`
-  position: absolute;
-  left: 0;
-`;
 
 const Items = styled.ul`
   list-style: none;
@@ -202,6 +145,20 @@ const Box = styled.p`
   position: relative;
   border: 1px solid ${(props) => props.theme.text};
 `;
+
+const BoxPlain = styled.p`
+  height: fit-content;
+  color: ${(props) => props.theme.text};
+  padding: 1rem;
+  position: relative;
+  margin-right: ${(props) => (props.hasImage ? '-100px' : '0')};  // Adjust the margin if it contains an image
+
+  @media (max-width: 768px) {
+    width: 80%; // or any percentage or fixed size you want
+    height: auto;
+  }
+`;
+
 const SubTitle = styled.span`
   display: block;
   font-size: ${(props) => props.theme.fontxl};
@@ -213,33 +170,30 @@ const SubTitle = styled.span`
     font-weight: 600;
   }
 `;
-const Text = styled.span`
-  display: block;
-  font-size: ${(props) => props.theme.fontsm};
-  text-transform: capitalize;
-  color: ${(props) => props.theme.text};
 
-  font-weight: 400;
-  margin: 0.5rem 0;
-  @media (max-width: 40em) {
-    font-size: ${(props) => props.theme.fontxs};
-  }
-`;
+const Image = ({ src }) => (
+  <img src={src} alt="" style={{ width: '450px' }} />
+);
 
+const RoadMapItem = ({ title, addToRef, animation }) => (
+  <Item ref={addToRef}>
+    <ItemContainer>
+      <Box>
+        <SubTitle>{title}</SubTitle>
+        {animation && animation}
+      </Box>
+    </ItemContainer>
+  </Item>
+);
 
-
-const RoadMapItem = ({ title, subtext, addToRef, hasSvgAnimation }) => {
-  return (
-    <Item ref={addToRef}>
-      <ItemContainer>
-        <Box>
-          <SubTitle>{title}</SubTitle>
-          <Text>{subtext}</Text>
-        </Box>
-      </ItemContainer>
-    </Item>
-  );
-};
+const RoadMapItemPlain = ({ title, addToRef, animation }) => (
+  <Item ref={addToRef}>
+    <BoxPlain hasImage={!!animation}>
+      <SubTitle>{title}</SubTitle>
+      {animation && animation}
+    </BoxPlain>
+  </Item>
+);
 
 const Roadmap = () => {
   const revealRefs = useRef([]);
@@ -288,7 +242,7 @@ const Roadmap = () => {
         <SvgContainer>
           <DrawSvg />
         </SvgContainer>
-        <BankAnimationContainer>
+        {/* <BankAnimationContainer>
           <BankAnimation />
         </BankAnimationContainer>
         <ReconcileAnimationContainer>
@@ -296,7 +250,7 @@ const Roadmap = () => {
         </ReconcileAnimationContainer>
         <DashboardAnimationContainer>
           <img src={dashboard} alt="dashboard" />
-        </DashboardAnimationContainer>
+        </DashboardAnimationContainer> */}
         <Items>
           <Item>&nbsp;</Item>
             
@@ -305,24 +259,38 @@ const Roadmap = () => {
               title="Brings together all of your bank accounts"
               subtext=""
             />
-         
-          <RoadMapItem
+
+          <RoadMapItemPlain
             addToRef={addToRefs}
-            title="Label and categorise transactions"
-            subtext=""
+            animation={<BankAnimation />}  // Pass the SVG animation
           />
+         
+        
          
           <RoadMapItem
             addToRef={addToRefs}
             title="3-way reconciliation across your banks, payments processors & accounting systems."
             subtext="Smart Transaction matching: Many to one & many to many matching through AI."
           />
+
+          <RoadMapItemPlain
+            addToRef={addToRefs}
+            animation={<Image src={reconc} />}  // Pass the image
+          />
+          
           <RoadMapItem
             addToRef={addToRefs}
             title="Granular cashflow visibility from AI powered categorisation of your transactions"
             
             subtext=""
           />
+
+
+          <RoadMapItemPlain
+            addToRef={addToRefs}
+            animation={<Image src={dashboard} />}  // Pass the image
+          />
+
           <RoadMapItem
             addToRef={addToRefs}
             title="Stay in control over inflows and outflows with automated management of AP & AR "
